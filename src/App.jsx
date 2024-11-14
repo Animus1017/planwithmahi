@@ -12,7 +12,7 @@ function App() {
     return( 
       <div className="w-screen h-screen overflow-x-hidden box-border flex flex-col justify-center items-center gap-5">
         <h1 className="font-bold text-xl">No Tours Left</h1>
-        <button onClick={()=>setTour(data)} className="text-sm bg-gray-200 font-medium py-1 px-8 rounded-md">Refresh</button>
+        <button onClick={()=>setTour(data)} className="text-sm bg-gray-200 font-medium py-1 px-8 rounded-md hover:bg-gray-100 transition-all delay-200">Refresh</button>
       </div>
     );
   } 
