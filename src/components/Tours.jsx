@@ -7,7 +7,7 @@ const Tours = ({tours,removeTour}) => {
       <div className='flex gap-2 justify-center flex-wrap'>
         {
           tours.map((tour)=>{
-            return <Card {...tour} removeTour={removeTour} className=''></Card>
+            return <Card key={tour.id} {...tour} removeTour={removeTour} className=''></Card>
           })
         }
       </div>
